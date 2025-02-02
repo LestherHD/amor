@@ -6,7 +6,7 @@
 }
 
 body {
-    position: relative;
+    position: flex;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -88,48 +88,3 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Dancing Script', cursive; /* Fuente romántica */
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background-color: #ffe5e5;
-    overflow: hidden; /* Evita el scroll innecesario */
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 350px; /* Ajuste para móvil */
-    padding: 20px;
-}
-
-.gif-image {
-    width: 100%;
-    max-width: 120px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-/* Ajustes adicionales para dispositivos móviles */
-@media screen and (max-width: 480px) {
-    .container {
-        max-width: 90%;
-    }
-
-    .gif-image {
-        max-width: 100px; /* Reduce la imagen en pantallas más pequeñas */
-    }
-}
