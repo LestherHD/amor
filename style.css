@@ -84,7 +84,7 @@ p {
     }
 
     .gif-image {
-        max-width: 120px; /* Reduce la imagen en móviles */
+        max-width: 200px; /* Reduce la imagen en móviles */
     }
 }
 
