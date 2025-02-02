@@ -2,89 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
 }
 
 body {
-    position: flex;
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
     background-color: #ffe5e5;
-    font-family: 'Dancing Script', cursive;
+    overflow: hidden; /* Evita el scroll innecesario */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center; /* Centra el contenido */
     align-items: center;
-    gap: 20px;
-    max-width: 500px;
-    margin: 20px;
-    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 0; /* Elimina cualquier espacio extra */
+    min-height: 100vh; /* Ocupar toda la pantalla */
 }
 
 .gif-image {
     width: 100%;
-    max-width: 200px;
+    max-width: 120px; /* Ajusta el tamaño de la imagen */
+    height: auto;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-.container .btn {
-    display: flex;
-    gap: 25px;
-}
-
-.btn a {
-    text-decoration: none;
-    color: #fff;
-    background: #ff6b81;
-    padding: 10px 25px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn a:hover {
-    background-color: #ff4d6d;
-    transform: scale(1.1);
-}
-
-/* Ajustes para el botón "NO" */
-#btn-random {
-    transition: top 0.2s ease, left 0.2s ease;
-}
-
-/* Responsividad */
-@media screen and (max-width: 768px) {
+/* Ajustes específicos para móviles */
+@media screen and (max-width: 480px) {
     .container {
-        max-width: 100%;
-        padding: 15px;
+        max-width: 90%;
     }
 
-    .btn {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .btn a {
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-
-    /* Ajuste para el botón "NO" en móviles */
-    #btn-random {
-        width: 100%;
-        position: relative;
+    .gif-image {
+        max-width: 100px;
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
