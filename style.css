@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive, sans-serif;
+    font-family: sans-serif, cursive, sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffe5e5;
-    font-family: 'Dancing Script', cursive;
+    font-family: sans-serif, cursive;
     font-size: 14px; /* Hace el texto general más pequeño */
 }
 
