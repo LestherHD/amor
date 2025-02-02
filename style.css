@@ -87,3 +87,48 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5e5;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gif-image {
+    width: 100%;
+    max-width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad para asegurar que se vea bien en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .gif-image {
+        max-width: 120px; /* Reducir aún más el tamaño en móviles si es necesario */
+    }
+}
+
