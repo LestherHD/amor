@@ -28,8 +28,8 @@ body {
 }
 
 .gif-image {
-    width: 100%;
-    max-width: 200px;
+    width: 200%;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
 }
