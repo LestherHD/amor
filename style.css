@@ -38,7 +38,7 @@ p {
 
 .gif-image {
     width: 200%;
-    max-width: 150px; /* Reduce un poco la imagen */
+    max-width: 250px; /* Reduce un poco la imagen */
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
 }
